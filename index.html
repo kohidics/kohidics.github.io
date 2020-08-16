@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7csoda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ad64ed220b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>7 Csoda játék győzelmi pont számoló</h1>
+    <img src="/img/7csoda.jpg" alt="10px">
+      <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <table class="table table-striped table-bordered table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th>Pontozandó szempont</th>
+                            <th>KCs</th>
+                            <th>KoSzaAdri</th>
+                            <th>KK</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-warning">
+                        <td>1. Katonai konfliktusjelzők</td>
+                        <td> <input type="number" class="form-controll" value=0 name="kcs11"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="a11"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="kk11"></td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>2. Kincstár tartalma (/3!)</td>
+                        <td> <input type="number" class="form-controll" value=0 name="kcs12"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="a12"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="kk12"></td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>3. Csoda</td>
+                        <td> <input type="number" class="form-controll" value=0 name="kcs13"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="a13"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="kk13"></td>
+                        <td>
+                           
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>4. Civil kártyák</td>
+                        <td> <input type="number" class="form-controll" value=0 name="kcs14"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="a14"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="kk14"></td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>5. Kereskedelmi kártyák</td>
+                        <td> <input type="number" class="form-controll" value=0 name="kcs15"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="a15"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="kk15"></td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>6. Céhek kártyái</td>
+                        <td> <input type="number" class="form-controll" value=0 name="kcs16"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="a16"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="kk16"></td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>7.Tudományos kártyák</td>
+                        <td> <input type="number" class="form-controll" value=0 name="kcs17"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="a17"></td>
+                        <td> <input type="number" class="form-controll" value=0 name="kk17"></td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Összesített pontszám</td>
+                        <td> <span class="show-amountKcs"> 0 </span> 
+                              <div class="btn-group">
+                                <button onclick="calcAmountKcs()" class="btn-info btn"  ><i class="fas fa-sync"></i></button>
+                              </div>
+                        </td>
+                        <td> 
+                          <span class="show-amountA"> 0 </span> 
+                              <div class="btn-group">
+                                <button onclick="calcAmountA()" class="btn-info btn"  ><i class="fas fa-sync"></i></button>
+                              </div>
+                        </td>
+                        <td>
+                          <span class="show-amountKk"> 0 </span> 
+                              <div class="btn-group">
+                                <button onclick="calcAmountKk()" class="btn-info btn"  ><i class="fas fa-sync"></i></button>
+                              </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div>Code byKCs</div>
+<script src="/js/7csoda.js"></script>  
+</body>
+</html>
